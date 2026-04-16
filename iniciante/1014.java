@@ -1,0 +1,18 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+        Scanner sc = new Scanner(System.in);
+        
+        int distancia = sc.nextInt();
+        double litro = sc.nextDouble();
+        
+        double consumo = distancia / litro;
+        
+        System.out.printf("%.3f km/l\n", consumo);
+    }
+ 
+}
